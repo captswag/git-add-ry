@@ -191,4 +191,8 @@ Push a local branch `<branch-name>` to another repository `<remote-name>`.
 
 ### 8. Centralized Workflows
 
+```
+git init --bare <repository-name>
+```
 
+Create a Git repository, but omit the working directory.
