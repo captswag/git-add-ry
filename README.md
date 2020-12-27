@@ -68,12 +68,12 @@ Git is "fast-forwarding" through the new commits in the `css` branch.
 
 ### 4. Chapter - Branches II
 
-Temporary branches are called topic branches because they exist to develop a certain topic, then they are deleted.
+Temporary branches are called **topic** branches because they exist to develop a certain topic, then they are deleted.
 
-Longer-running type of topic branches are called a feature branch as it was created with the intention of developing a 
+Longer-running type of topic branches are called a **feature** branch as it was created with the intention of developing a 
 specific feature.
 
-Hotfix branches are used to quickly patch a production release.
+**Hotfix** branches are used to quickly patch a production release.
 
 Usually permanent master branch is used as a foundation for all these temporary branches. In addition to master, many 
 programmers add a second permanent branch called develop. This lets them use master to record really stable snapshots 
