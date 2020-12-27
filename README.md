@@ -166,3 +166,25 @@ git log --stat
 ```
 
 Include extra information about altered files in the log output.
+
+### 7. Chapter - Remotes
+
+```
+git branch -r
+```
+
+List remote branches.
+
+Remote branches are not direct links into remote repository, instead they are read-only copies of her branches.
+
+```
+git fetch <remote-name>
+```
+
+Download remote branch information, but do not merge anything.
+
+```
+git push <remote-name> <branch-name>
+```
+
+Push a local branch `<branch-name>` to another repository `<remote-name>'.
