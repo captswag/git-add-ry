@@ -128,3 +128,18 @@ git merge --no-ff <branch-name>
 ```
 
 Forces a merge commit even if Git could do a fast-forward merge.
+
+### 6. Chapter - Rewriting History
+
+```
+git reset --hard HEAD~<number>
+```
+
+The `git reset` command moves the checked out snapshot to a new commit, and the `HEAD~1` parameter tells it to reset to 
+the commit that occurs immediately before the current HEAD. Likewise HEAD~2 would refer to second commit before HEAD.
+
+The `--hard HEAD~1` tells Git to make make the working directory look exactly like the most recent commit, giving us 
+the intended effect of removing uncommmited changes.
+
+The commit that we removed from the branch is not a **dangling commit**. Dangling commits are those that cannot be 
+reached from any branch and are thus in danger of being lost forever.
