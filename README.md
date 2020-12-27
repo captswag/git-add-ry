@@ -70,8 +70,8 @@ Git is "fast-forwarding" through the new commits in the `css` branch.
 
 Temporary branches are called **topic** branches because they exist to develop a certain topic, then they are deleted.
 
-Longer-running type of topic branches are called a **feature** branch as it was created with the intention of developing a 
-specific feature.
+Longer-running type of topic branches are called a **feature** branch as it was created with the intention of 
+developing a specific feature.
 
 **Hotfix** branches are used to quickly patch a production release.
 
