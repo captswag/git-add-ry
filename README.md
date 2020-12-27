@@ -98,4 +98,33 @@ git merge master
 A 3-way merge occurs when you try to merge two branches whose history has diverged. It creates an extra merge commit 
 to function as a link between the two branches. As a result, it has two parent commits.
 
-### Chapter 5 - Rebasing
+### 5. Chapter - Rebasing
+
+```
+git checkout feature
+git rebase master
+```
+
+![rebase](images/rebasing-feature-master.png)
+
+Instead of joining the branches with a merge commit, rebasing integrates the feature branch by building on top of 
+master. Rebasing enables fast-forward merges by moving a branch to the tip of another branch, resulting in a completely 
+linear history.
+
+```
+git rebase <new-base>
+```
+
+Move the current branch's commits to the tip of `<new-base>`, which can be either a branch name or a commit ID.
+
+```
+git rebase -i <new-base>
+```
+
+Perform an interactive rebase and select actions for each commit.
+
+```
+git merge --no-ff <branch-name>
+```
+
+Forces a merge commit even if Git could do a fast-forward merge.
