@@ -277,4 +277,4 @@ git config --global alias.<alias-name> <git-command>
 Create a shortcut for a command and store it in the global configuration file. By default, global configurations reside 
 in ~/.gitconfig.
 
-### 12. Chapter - Plumbing
+### 12. Chapter - Plumbing (Not covered here)
