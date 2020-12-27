@@ -216,7 +216,7 @@ git am < <patch-file>
 
 Apply a patch to the current branch.
 
-### 11. Tips & Tricks
+### 11. Chapter - Tips & Tricks
 
 ```
 git archive master --format=tar --output=../project.tar
@@ -276,3 +276,5 @@ git config --global alias.<alias-name> <git-command>
 
 Create a shortcut for a command and store it in the global configuration file. By default, global configurations reside 
 in ~/.gitconfig.
+
+### 12. Chapter - Plumbing
