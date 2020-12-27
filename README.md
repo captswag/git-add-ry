@@ -85,6 +85,9 @@ git commit -a -m "<message>"
 
 Stage all tracked files and commit the snapshot using the specified message.
 
+p.s. Git uses the tip of a branch to represent the entire branch. That is to say, a branch is actually a pointer to a 
+single commit, not a container for a series of commits.
+
 ##### 3-way merge
 
 ![before-merge](images/branches-ii-before-merge.png)
@@ -132,7 +135,7 @@ Forces a merge commit even if Git could do a fast-forward merge.
 ### 6. Chapter - Rewriting History
 
 ```
-git reset --hard HEAD~<number>
+git reset --hard HEAD~<n>
 ```
 
 The `git reset` command moves the checked out snapshot to a new commit, and the `HEAD~1` parameter tells it to reset to 
@@ -143,3 +146,23 @@ the intended effect of removing uncommmited changes.
 
 The commit that we removed from the branch is not a **dangling commit**. Dangling commits are those that cannot be 
 reached from any branch and are thus in danger of being lost forever.
+
+```
+git reflog
+```
+
+The reflog is a chronological listing of our history, without regard for the repositry's branch structure. This lets us 
+find dangling commits that would otherwise be lost from the project history.
+
+```
+git log <since>..<until>
+```
+
+Display the commits reachable from `<until>` but not from `<since>`. These parameters can be either commit ID's or 
+branch names.
+
+```
+git log --stat
+```
+
+Include extra information about altered files in the log output.
