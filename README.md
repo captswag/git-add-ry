@@ -202,3 +202,18 @@ Create a Git repository, but omit the working directory.
 ### 10. Patch Workflows
 
 A patch file represents a single set of changes (i.e., a commit) that can be applied to any branch, in any order.
+
+```
+git format-patch <branch-name>
+```
+
+Create a patch for each commit contained in the current branch but not in <branch-name>. You can also specify a commit 
+ID instead of <branch-name>.
+
+```
+git am < <patch-file>
+```
+
+Apply a patch to the current branch.
+
+### 11. Tips & Tricks
