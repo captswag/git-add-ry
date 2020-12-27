@@ -187,4 +187,8 @@ Download remote branch information, but do not merge anything.
 git push <remote-name> <branch-name>
 ```
 
-Push a local branch `<branch-name>` to another repository `<remote-name>'.
+Push a local branch `<branch-name>` to another repository `<remote-name>`.
+
+### 8. Centralized Workflows
+
+
