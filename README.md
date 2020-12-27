@@ -217,3 +217,62 @@ git am < <patch-file>
 Apply a patch to the current branch.
 
 ### 11. Tips & Tricks
+
+```
+git archive master --format=tar --output=../project.tar
+```
+
+This takes the current master branch and places all of its files into a ZIP archive (or a tarball), omitting the .git
+directory.
+
+```
+git bundle create ../repo.bundle master
+```
+
+`git bundle` turns a repository into a single file. However in this case, the file retains the versioning information 
+of the entire project.
+
+```
+git clone repo.bundle repo-copy -b master
+```
+
+Recreate a project from the bundled repository and checkout `<branch-name>`.
+
+##### Hook
+
+A hook is a script that Git executes every time a particular event occurs in a repository. You can see the available 
+hooks inside the .git/hooks directory.
+
+```
+git diff <commit-id>..<commit-id>
+```
+
+View the differences between two commits.
+
+```
+git diff --cached
+```
+
+View the difference between the staging area and the most recent commit.
+
+```
+git reset HEAD <file-name>
+```
+
+This type of git reset can be used to unstage a file.
+
+```
+git checkout HEAD <file-name>
+```
+
+Passing a file path to `git checkout` reverts that file to the specified commit.
+
+p.s. To summarize the file-path behavior of `git reset` and `git checkout`, both take a committed snapshot as a 
+reference point and make a file in the staging area or the working directory too match that reference, respectively.
+
+```
+git config --global alias.<alias-name> <git-command>
+```
+
+Create a shortcut for a command and store it in the global configuration file. By default, global configurations reside 
+in ~/.gitconfig.
