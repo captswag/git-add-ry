@@ -267,7 +267,7 @@ git checkout HEAD <file-name>
 
 Passing a file path to `git checkout` reverts that file to the specified commit.
 
-p.s. To summarize the file-path behavior of `git reset` and `git checkout`, both take a committed snapshot as a 
+p.s. To summarize the file path behavior of `git reset` and `git checkout`, both take a committed snapshot as a 
 reference point and make a file in the staging area or the working directory too match that reference, respectively.
 
 ```
