@@ -189,7 +189,7 @@ git push <remote-name> <branch-name>
 
 Push a local branch `<branch-name>` to another repository `<remote-name>`.
 
-### 8. Centralized Workflows
+### 8. Chapter - Centralized Workflows
 
 ```
 git init --bare <repository-name>
@@ -197,9 +197,9 @@ git init --bare <repository-name>
 
 Create a Git repository, but omit the working directory.
 
-### 9. Distributed Workflows
+### 9. Chapter - Distributed Workflows
 
-### 10. Patch Workflows
+### 10. Chapter - Patch Workflows
 
 A patch file represents a single set of changes (i.e., a commit) that can be applied to any branch, in any order.
 
